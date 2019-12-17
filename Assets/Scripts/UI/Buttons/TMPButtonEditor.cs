@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 
 [CustomEditor(typeof(TMPButton))]
 public class TMPButtonEditor : Editor
@@ -9,3 +10,4 @@ public class TMPButtonEditor : Editor
         TMPButton targetButton = (TMPButton)target;
     }
 }
+#endif
